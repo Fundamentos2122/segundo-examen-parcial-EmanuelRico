@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fundamentos2122.github.io/framework-css-EmanuelRico/css/framework.css">
+    <link rel="stylesheet" href="css/index_styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Tareas</title>
+</head>
+<body>
+    <div class="modal" id="modal_test">
+        <div class="modal-content">
+            <div class="modal-header">
+               <h5>Agregar tarea</h5>
+               <button class="btn light-btn" data-dismiss="#modal_test">X</button>
+            </div>
+
+
+            <form name="listForm">
+                <div class="modal-container error">
+                    Campos incompletos
+                </div>
+
+                <div class="modal-container">
+                    <label for="title">Título</label>
+                    <input class="border inputs" type="text" name="title" autocomplete="off" required>
+                </div>
+
+                <div class="modal-container">
+                    <label for="description">Descripción</label>
+                    <textarea class="border inputs desc" name="description"></textarea>
+                </div>
+
+                <div class="modal-container">
+                    <label for="date">Fecha</label>
+                    <input class="border inputs date" type="date" name="date">
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn success-btn">Guardar</button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+
+    <div class="col-11 col-md-5 hw-container">
+        <h1 class="title">Lista de Tareas</h1>
+    </div>
+
+    <div class="col-11 col-md-5 hw-bar" id="homeworks">
+        <div>
+            <input type="checkbox" name="checkbox" id="cb">
+            <label for="checkbox">Ver todos</label>
+        </div>
+
+        <button class="btn warning-btn" data-toggle="modal" data-target="#modal_test">Nueva</button>
+    </div>
+
+    <div id="hws">
+        <!-- <p class="hw-date">09/11/21</p>
+        <h5>Comprar Árbol de Navidad</h5>
+        <p>Ir al super por un árbolito de navidad</p>
+
+        <div class="complete">
+            <input type="checkbox" name="conditions">
+            <label for="conditions">Completada</label>
+        </div>
+    
+        <div class="col-1 btn-cont">
+            <button class="btn danger-btn close-btn">Eliminar</button>
+        </div>-->
+    </div>
+
+    <script src="js/index_script.js"></script>
+    <script src="https://fundamentos2122.github.io/framework-css-EmanuelRico/js/framework.js"></script>
+</body>
+</html>

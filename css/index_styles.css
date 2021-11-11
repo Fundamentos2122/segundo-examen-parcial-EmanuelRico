@@ -1,0 +1,109 @@
+html{
+    background-color: rgb(236, 236, 236);
+}
+
+h5{
+    max-width: 80%;
+}
+
+.hw-container{
+    height: 300px;
+    margin: auto;
+    background-color: rgb(0, 118, 197);
+}
+
+.hw-list{
+    height: auto;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+}
+
+.hw-bar{
+    height: 50px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.complete{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.modal-container{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.btn{
+    border-width: 0;
+}
+
+.title{
+    color: white;
+    font-size: 4em;
+    text-align: center;
+    font-weight: 100;
+}
+
+.error{
+    margin: 1em;
+    background-color: rgb(221, 85, 85);
+    color: rgb(148, 39, 39);
+    border-radius: 3px;
+    display: none;
+}
+
+.inputs{
+    border-radius: 3px;
+    width: 70%;
+    padding: 0.5em;
+}
+
+.desc{
+    height: 6em;
+}
+
+.date{
+    color: rgb(107, 107, 107);
+}
+
+.hw-date{
+    color: rgb(107, 107, 107);
+    font-size: smaller;
+    position: absolute;
+    right: 0;
+    margin-right: 1em;
+}
+
+.close-btn{
+    padding: 0.4em 0.5em;
+}
+
+.btn-cont{
+    padding: 0;
+}
+
+@media (min-width: 1065px) {
+    .title{
+        font-size: 7em;
+    }
+
+    .hw-container{
+        height: 400px;
+    }
+
+    .hw-bar{
+        height: 65px;
+    }
+}
